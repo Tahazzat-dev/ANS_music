@@ -105,7 +105,8 @@ ol {
    Root Variables
 =========================== */
 :root {
-  --white: #ffff;
+  /* --white: #ffff; */
+  --white: #e2e2e2;
   --black: #000;
   --dark-black:#050D28;
   --cyan : #00FFFF;

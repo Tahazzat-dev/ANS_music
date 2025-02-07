@@ -1,52 +1,3 @@
-/* ===========================
-   Root Variables
-=========================== */
-:root {
-  --white: #ffff;
-  --black: #000;
-  --dark-black: #050d28;
-  --cyan: #00ffff;
-  --neon-magenda: #ea40f7;
-  --navy-blue: #08152b;
-  --deep-navy-blue: #081239;
-
-  --ff-road-rage: "Road Rage", Sans-serif;
-  --ff-futura-std: "Futura Std", Sans-serif;
-
-  --transition-delayed: all 1s ease;
-  --transition-slow: all 0.7s ease;
-  --transition-normal: all 0.5s ease;
-  --transition-fast: all 0.3s ease;
-  --transition-fastest: all 0.2s ease;
-
-  /* ==== global font size variables ====  */
-  --fs-sm: 16px;
-  --fs-base: 18px;
-  --fs-md: 20px;
-  --fs-lg: 24px;
-  --fs-xl: 27px;
-  --fs-2xl: 30px;
-  --fs-3xl: 34px;
-  --fs-4xl: 48px;
-  --fs-5xl: 64px;
-  --fs-6xl: 96px;
-  --fs-huge: 144px;
-
-  /* ======= line height ======== */
-  --lh-normal: normal;
-  --lh-md: 28px;
-  --lh-lg: 40px;
-
-  --lh-xl: 55px;
-  --lh-2xl: 70px;
-  --lh-3xl: 105px;
-  --lh-huge: 155px;
-  --lh-full: 100%;
-}
-
-/* ========== have to remove the above duplicate files
-                            copied from theme.css ========== */
-
 ::-webkit-scrollbar {
   width: 10px;
   height: 8px;
@@ -97,6 +48,13 @@ body {
 }
 /* global utility ends */
 
+
+.ANS_header,
+.ANS_main-wrapper,
+.ANS_footer{
+  padding-left: 70px;
+};
+
 /* sidbar style starts */
 .ANS_sidebar {
   position: fixed;
@@ -106,6 +64,8 @@ body {
   width: auto;
 }
 
+
+
 .ANS_sidebar::-webkit-scrollbar {
   width: 6px !important;
   height: 8px;
@@ -114,6 +74,8 @@ body {
 /* sidebar toggler container  */
 .ANS_sidebar .sidebar-toggle-container {
   position: fixed;
+  top: 0;
+  left: 0;
   align-items: center;
   justify-content: space-between;
   height: 100%;
@@ -125,8 +87,15 @@ body {
 .ANS_sidebar-logo-wrap.small {
   width: 100%;
   min-height: 40px;
-  margin-top: 50px;
+  margin-top: 40px;
   padding: 0 6px;
+  transition: var(--transition-normal);
+  opacity: 1;
+}
+
+.ANS_sidebar-logo-wrap.small.hide{
+  opacity: 0;
+  pointer-events: none;
 }
 
 .ANS_sidebar .top-small-logo {
@@ -466,6 +435,166 @@ body {
   animation-duration: 5s !important;
 }
 
+
+/* header style starts */
+.ANS_header{
+width: 100%;
+height: auto;
+}
+
+.ANS_header-inner{
+  padding: 25px 20px;
+  gap: 25px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.ANS_nav{
+  flex-grow: 1;
+}
+
+.ANS_header-inner .nav-logo-wrap{
+ min-width: 200px ;
+  max-width: 300px;
+  overflow: hidden;
+}
+.ANS_header-inner .nav-logo-wrap img{
+  transition: var(--transition-normal);
+}
+.ANS_header-inner .nav-logo-wrap.hide img{
+  transform: translateX(-400px);
+  opacity: 0;
+}
+
+.ANS_nav ul{
+  justify-content: end;
+  gap: 40px;
+}
+
+.ANS_nav ul a,
+.ANS_sidebar .ANS_menu li a{
+  text-transform: uppercase;
+}
+
+.ANS_nav ul a{
+  position: relative;
+  cursor: pointer;
+}
+
+.ANS_nav ul a:not(.ANS_btn)::before{
+  position: absolute ;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 3px ;
+  content: '';
+  border-radius: 4px;
+  background-color: var(--cyan);
+  transition: var(--transition-normal);
+}
+
+.ANS_nav ul a:not(.ANS_btn):hover::before{
+  width: 100%;
+}
+
+/* footer style starts */
+.ANS_footer{
+  width: 100%;
+  padding: 50px;
+  padding-left: 70px;
+  border-top: 1px solid rgb(40, 40, 40);
+  background-color: var(--dark-black);
+}
+
+.ANS_footer .footer-top{
+  gap: 45px;
+  justify-content: space-between;
+}
+
+.ANS_footer .footer-top .footer-col{
+  flex-grow: 1;
+}
+
+.ANS_footer .footer-col h5{
+  margin-bottom: 20px;
+}
+
+.ANS_footer .footer-des{
+  max-width: 300px;
+  width: 100%;
+}
+
+.ANS_footer .footer-des img{
+margin-bottom: 20px;
+}
+
+.ANS_footer .footer-contact-info{
+  max-width: 150px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.ANS_footer .footer-contact-info address{
+ margin-bottom: 15px;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 20px;
+ font-style: normal;
+}
+
+
+.ANS_footer .ANS_contact-form-wrap{
+ width: 100%;
+ max-width: 350px;
+}
+
+.ANS_footer .membership-info{
+  width: 100%;
+  max-width: 300px;
+}
+
+.ANS_footer .membership-info img{
+  width: 100%;
+  max-width: 250px;
+}
+
+.ANS_footer .membership-info .a2im{
+    margin-bottom: 15px;
+}
+
+
+
+
+.ANS_footer .phone-wrap{
+width: 100%;
+margin-top: 30px;
+gap: 10px;
+}
+
+.ANS_footer .phone-wrap img{
+width: 30px;
+}
+
+.ANS_footer .footer-bottom{
+  margin-top: 40px;
+  gap: 20px;
+  padding-bottom: 80px;
+}
+
+.ANS_footer .footer-bottom .footer-social-links{
+  gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 /* ================= 
       Device responsiveness
              ================== */
@@ -583,6 +712,20 @@ body {
     padding: 8px 10px;
     font-weight: 400;
   }
+
+  /* header style starts */
+  .ANS_nav ul {
+    gap: 20px;
+}
+
+.ANS_header-inner .nav-logo-wrap {
+  min-width: 150px;
+  max-width: 180px;
+  overflow: hidden;
+}
+
+
+  /* end */
 }
 
 /* small monitor */
@@ -591,6 +734,34 @@ body {
   .ANS_sidebar .sidebar-toggler-btn {
     width: 35px;
   }
+
+  .ANS_sidebar-logo-wrap.small {
+    margin-top: 34px;
+}
+
+  /* header style starts */
+.ANS_nav ul a{
+  font-size: 16px;
+}
+
+.ANS_nav ul .ANS_btn{
+  font-size: 16px;
+  padding: 8px 10px;
+}
+
+.ANS_header-inner {
+  gap: 15px;
+}
+
+.ANS_header-inner .nav-logo-wrap {
+  display: none;
+}
+
+.ANS_sidebar-logo-wrap.small.hide{
+  opacity: 1;
+  pointer-events: unset !important;
+}
+
 }
 
 /* tablets ( extra large )  */
@@ -642,11 +813,40 @@ body {
   height: 36px;
 }
 
+/* header style starts */
+.ANS_nav ul .home-link,
+.ANS_nav ul .about-link{
+  display: none;
+}
+
+/* footer style starts */
+.ANS_footer .footer-top{
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 70px;
+ }
+ 
+ .ANS_footer .footer-col{
+   max-width: 350px;
+ }
+
+ .ANS_footer .ANS_contact-form-wrap {
+  margin-top: 0px !important;
+  }
+
+  .ANS_footer .footer-contact-info,
+  .ANS_footer .membership-info{
+    max-width: 250px;
+  }
 
 }
 
 /* tablets ( medium )  */
 @media screen and (max-width: 840px) {
+/* header style */
+.ANS_nav ul .contact-link{
+  display: none;
+}
 }
 
 /* phones ( extra large )  */
@@ -661,12 +861,252 @@ body {
     display: none;
   }
 
-  /* sidebar  */
-  .ANS_sidebar{
-    display: none !important;
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
   }
+
+
+  .ANS_header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--dark-black);
+    z-index: 9999;
+  }
+
+  .ANS_header, .ANS_main-wrapper, .ANS_footer {
+padding: 0;
+
+}
+
+
+
+  /* mobile hamberger menu */
+  .ANS_hamburger-menu {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.ANS_hamburger-menu .bar-1,
+.ANS_hamburger-menu .bar-2,
+.ANS_hamburger-menu .bar-3{
+  width: 30px;
+  height: 3px;
+  background-color: #0ff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.ANS_hamburger-menu.active .bar-1 {
+  -webkit-transform: rotate(-45deg) translate(-8px,0);
+  transform: rotate(-45deg) translate(-8px,0);
+}
+.ANS_hamburger-menu.active .bar-2 {
+  opacity: 0;
+}
+.ANS_hamburger-menu.active .bar-3 {
+  -webkit-transform: rotate(45deg) translate(-8px,0);
+  transform: rotate(45deg) translate(-8px,0);
+}
+
+
+ /* sidebar  */
+ .ANS_sidebar .sidebar-toggle-container {
+  display: none !important;
+}
+
+.ANS_sidebar .sidebar-drawer-wrap {
+  transform: translate( 0, -100%);
+}
+
+.ANS_sidebar .site-nav-logo {
+  display: none;
+}
+
+.ANS_sidebar .sidebar-drawer-wrap.open {
+  transform: translateX(0, 0);
+}
+
+.ANS_sidebar .sidebar-drawer-wrap .sidebar-inner {
+  overflow-y: auto;
+  display: block;
+  padding-top: 45px;
+}
+
+.ANS_sidebar .menu-col {
+  padding: 40px 0;
+  min-width: 200px;
+  flex-grow: 1;
+  background-color: transparent;
+  align-items: center;
+}
+
+.ANS_sidebar .ANS_menu {
+  gap: 15px;
+  align-items: center;
+}
+
+.ANS_sidebar .sidenav-link.active, .ANS_sidebar .sidenav-link:hover {
+  padding-left: 0px;
+}
+.ANS_sidebar .sidenav-link.active::before, .ANS_sidebar .sidenav-link:hover::before {
+  padding-left: 0px;
+  content: none;
+}
+
+.ANS_sidebar .sidenav-link.active::after, .ANS_sidebar .sidenav-link:hover::after {
+ content: none;
+}
+
+.sidenav-link, .text-fill {
+  -webkit-text-fill-color: var(--white);
+  text-fill-color:  var(--white);
+  -webkit-text-stroke-width: 0px;
+  position: relative;
+  font-size: 20px;
+}
+
+.ANS_sidebar .contact-wrapper {
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.ANS_sidebar .contact-col {
+  padding: 20px;
+}
+
+.ANS_sidebar .our-partners-wrapper {
+ /* margin-top: 50px; */
+ display: none;
+}
+
+.ANS_contact-form-wrap {
+ width: 100%;
+  max-width: 400px;
+}
+
+.ANS_sidebar .ANS_contact-info {
+ width: 100%;
+ max-width: 400px;
+ align-items: center;
+}
+
+.ANS_sidebar .ANS_contact-info h5 {
+ text-align: center;
+}
+
+.ANS_sidebar .ANS_contact-info address {
+ text-align: center;
+ max-width: 300px;
+}
+
+.ANS_contact-form-wrap h5 {
+ text-align: center;
+ margin-top: 15px;
+}
+
+.ANS_sidebar .phone-wrap {
+ text-align: center;
+ justify-content: center;
+}
+
+.ANS_contact-form-wrap .social-links {
+ justify-content: center;
+}
+
+
+/* header style */
+.ANS_header .ANS_nav{
+  display: none !important;
+}
+
+.ANS_header-inner .nav-logo-wrap {
+ display: block !important;;
+}
+
+.ANS_header-inner {
+ padding: 15px 20px;
+}
+
+
+/* main content style starts */
+.ANS_main-wrapper{
+  padding-top: 80px;
+}
+
+/* footer style starts */
+.ANS_footer .footer-top{
+  flex-direction: column;
+  row-gap: 50px;
+ }
+ 
+ .ANS_footer .footer-col{
+   max-width: 400px;
+ }
+
+  .ANS_footer .footer-contact-info,
+  .ANS_footer .membership-info{
+    max-width: 300px;
+  }
+
+  .ANS_footer .footer-col h5 {
+    margin-bottom: 20px;
+    text-align: left !important;
+}
+
+.ANS_footer .footer-bottom {
+  margin-top: 50px;
+}
+
+
+.ANS_footer .footer-bottom{
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.ANS_footer .footer-bottom .footer-social-links{
+  gap: 10px;
+}
+
+
+
+
+
+.ANS_footer{}
+.ANS_footer{}
+.ANS_footer{}
+.ANS_footer{}
+
+
+
+/* end */
+
+
+
+
 }
 
 /* phones ( small, medium ) */
 @media screen and (max-width: 560px) {
+
+  /* sidebar style starts */
+
+  .ANS_sidebar .ANS_menu li a {
+    font-size: 18px;
+}
+.ANS_sidebar .ANS_contact-info address {
+  text-align: center;
+  max-width: 250px;
+}
+
+/* header style */
+.ANS_header-inner {
+  padding: 15px 16px;
+ }
+
 }

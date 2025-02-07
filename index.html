@@ -13,12 +13,37 @@
     <link rel="stylesheet" href="/assets/css/test.css" />
   </head>
   <body style="background: black">
-    <header class="ANS_header"></header>
+    <header class="ANS_header">
+      <div class="ANS_header-inner ANS_flex flex_align_center justify_between">
+        <div class="nav-logo-wrap">
+          <a href="#" class="site-nav-logo">
+            <img src="assets/img/ANS-site-logo.png" alt="Site logo" />
+          </a>
+        </div> 
+
+        <!-- desktop navbar -->
+         <nav class="ANS_nav">
+          <ul class="ANS_flex flex_align_center">
+            <li class="home-link"><a class=""  href="#">HOME</a></li>
+                <li><a class="fs-base"  href="#">SERVICE</a></li>
+                <li><a class="fs-base"  href="#">WHY ANS MUSIC</a></li>
+                <li><a class="fs-base"  href="#">DISTRIBUTION SIGNUP</a></li>
+                <li class="contact-link"><a class="fs-base"  href="#">CONTACT</a></li>
+                <li class="about-link"><a class="fs-base"  href="#">ABOUT</a></li>
+                <li><a class="fs-base ANS_btn btn-b-cyan"  href="#">CLIENT LOGIN</a></li>
+          </ul>
+         </nav>
+
+
+        <!-- mobile hamberger menu -->
+        <button class="ANS_hamburger-menu mobi open"> <div class="bar-1"></div> <div class="bar-2"></div> <div class="bar-3"></div></button>
+      </div>
+    </header>
 
     <!-- sidebar starts -->
     <aside class="ANS_sidebar">
       <div class="sidebar-toggle-container ANS_flex flex_column">
-        <div class="ANS_sidebar-logo-wrap small">
+        <div class="ANS_sidebar-logo-wrap small hide">
           <a href="/" id="sidebar-small-logo" class="top-small-logo">
             <img src="assets/img/sidebar-site-logo.png" alt="site logo" />
           </a>
@@ -147,15 +172,105 @@
       <!-- page banner ends -->
 
       <h1 class="text-fill fill-clr-white" style="font-size: 5rem">
-        <span data-text="Demo">Demo</span>
+        <!-- <span data-text="Demo">Demo</span> -->
       </h1>
-
-      <div style="min-width: 700px; margin: 400px auto">
-        <button class="ANS_btn btn-b-cyan">OUR WORK</button>
-      </div>
     </main>
 
-    <footer></footer>
+    <!-- footer starts -->
+    <footer class="ANS_footer">
+      <div class="footer-top ANS_container ANS_flex">
+
+        <!-- site logo and description -->
+        <div class="footer-des footer-col">
+          <div class="footer-logo-wrap">
+            <a href="#" class="site-footer-logo">
+              <img src="assets/img/ans-footer-logo.jpg" alt="Site logo" />
+            </a>
+          </div>
+          <p class="">
+            ANS Music is a global digital music distributor and aggregator dedicated to empowering artists, labels, and rights holders. Founded in 2022, we provide comprehensive services, including digital music and video distribution, royalty collection, licensing, and marketing, ensuring creators receive maximum value and transparency.</p>
+        </div>
+
+        <!-- contact info -->
+         <div class="footer-col footer-contact-info ANS_flex flex_column">
+            <h5 class="fs-md">OFFICES</h5>
+            <address>
+              <span class="city">Adelaide</span>
+              <span class="city-address">
+                evel 2, 66 Wyatt Street, Adelaide, SA 5000
+              </span>
+            </address>
+
+            <address>
+              <span class="city">Melbourne</span>
+              <span class="city-address">
+                Suite 100, Level 4/54 Wellington Street, Collingwood,VIC
+                3021
+              </span>
+            </address>
+
+            <address>
+              <span class="city">Sydney</span>
+              <span class="city-address">
+                The Commons Surry Hills, 285A Crown St, Surry Hills NSW 2010
+              </span>
+            </address>
+         </div>
+
+         <!-- quick links -->
+         <div class="footer-col ANS_contact-form-wrap">
+          <h5 class="fs-md">Start A Conversation</h5>
+          <form class="ANS_contact-form ANS_flex flex_column" action="">
+            <input name="name" id="name" type="text" placeholder="Name">
+            <input name="email" id="email" type="email" placeholder="Email">
+            <textarea rows="1" name="message" id="message" type="text" placeholder="Message"></textarea>
+            <input name="verifyNnonce" id="verifyNnonce" placeholder="What is 1+2=?" type="text" >
+            <button type="submit" class="fs-base ANS_btn btn-b-cyan">SEND</button>
+          </form>
+
+          
+       
+
+     
+        
+        </div>
+
+          <!-- basis membership logo -->
+           <div class="footer-col membership-info">
+            <h5>PROUD MEMBERS OF</h5>
+
+            <img class="a2im" src="assets/img/a2im-logo.png" alt="A2IM logo">
+            <img class="basis" src="assets/img/basis-logo-bd.png" alt="basis logo">
+
+            <div class="phone-wrap ANS_flex flex_align_center">
+              <img src="assets/img/phone.webp" alt="phone icon">
+              <span class="nowrap fs-md">(08) 8470 1714</span>
+            </div>
+           </div>
+
+      </div>
+
+      <!-- bottom footer -->
+       <div class="footer-bottom ANS_container ANS_flex flex_align_center justify_center">
+        <div class="footer-social-links ANS_flex flex_align_center">
+               <!-- socical links -->
+                <a href="#" target="_blank">
+                  <img src="assets/img/facebook-icon.webp" alt="Facebook icon">
+                </a>
+                <a href="#" target="_blank">
+                  <img src="assets/img/twitter-icon.webp" alt="Twitter icon">
+                </a>
+                <a href="#" target="_blank">
+                  <img src="assets/img/linkedin-icon.webp" alt="Linkedin icon">
+                </a>
+                <a href="#" target="_blank">
+                  <img src="assets/img/instragram-icon.webp" alt="Instragram icon">
+                </a>
+        </div>
+
+        <p>&copy;Copyright 2024 | <a href="#">ANS Digital</a> | All right reserved | Powered by ANS Enterprise LLC </p>
+       </div>
+    </footer>
 
     <!-- scripts -->
     <script src="/assets/js/jquery-3.7.1.min.js"></script>

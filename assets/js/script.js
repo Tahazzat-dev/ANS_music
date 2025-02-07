@@ -25,7 +25,7 @@
               // bind any eleements event handlers
               bindEvents(){
                 $(document).on('mouseover  touchstart', '.nav-category-list',(e)=>this.showSubcategoryOverlay(e, true));
-                $(document).on('click  touch', '.sidebar-toggler-btn',(e)=>{
+                $(document).on('click  touch', '.sidebar-toggler-btn, .ANS_hamburger-menu',(e)=>{
 
                     if(!this.isSidebarOpen){
                         $('body').css('overflow-y', 'hidden')
@@ -39,6 +39,13 @@
                     $('.sidebar-drawer-wrap').toggleClass('open');
                     $('#sidebar-small-logo').toggle();
                 });
+                $(window).on("scroll", function () {
+                    if ($(this).scrollTop() > 80) {
+                        $('.ANS_sidebar-logo-wrap').removeClass('hide')
+                    } else {
+                          $('.ANS_sidebar-logo-wrap').addClass('hide')
+                      }
+                })
             }
 
             openSidebarDrawer(e){
