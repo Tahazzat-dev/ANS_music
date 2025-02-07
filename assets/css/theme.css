@@ -106,7 +106,9 @@ ol {
   --cyan : #00FFFF;
   --neon-magenda: #ea40f7;
   --navy-blue:#08152b;
+  --dark-blue:#03091B;
   --deep-navy-blue:#081239;
+  --deep-shade-blue:#4f506b;
 
   --ff-road-rage: 'Road Rage', sans-serif;
   --ff-futura-std: 'Futura Std', sans-serif;
@@ -454,6 +456,90 @@ ol {
   -webkit-flex-shrink: 2;
   -ms-flex: 1 2 auto;
   flex-shrink: 2;
+}
+
+
+/* =============== animation utility ============ */
+
+.text-fill {
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  position: relative;
+}
+
+.text-fill span {
+  display: inline-block;
+  position: relative
+}
+
+.text-fill span::before{
+  top: 0;
+  left: 0;
+  width: 0;
+  overflow: hidden;
+  position: absolute;
+  content: attr(data-text);
+  -webkit-transition: var(--transition-delayed);
+  -moz-transition: var(--transition-delayed);
+  transition: var(--transition-delayed);
+  white-space: nowrap;
+}
+
+.text-fill span:hover::before {
+  width: 100%
+}
+
+
+.text-fill.fill-clr-neon{
+    color: var(--neon-magenda);
+}
+
+.text-fill.fill-clr-neon span::before{
+   color:var(--neon-magenda) !important;
+  -webkit-text-fill-color: var(--neon-magenda) !important;
+}
+
+.text-fill.fill-clr-cyan{
+  color: var(--cyan);
+}
+
+.text-fill.fill-clr-cyan span::before{
+ color:var(--cyan) !important;
+-webkit-text-fill-color: var(--cyan) !important;
+}
+
+.text-fill.fill-clr-white{
+  color: var(--white);
+}
+
+.text-fill.fill-clr-white span::before{
+ color:var(--white) !important;
+-webkit-text-fill-color: var(--white) !important;
+}
+
+.text-fill.fill-fade-in span::before{
+width: 100% !important;
+-webkit-transition: var(--transition-fastest);
+-moz-transition: var(--transition-fastest);
+transition: var(--transition-fastest);
+opacity: 0;
+}
+
+.text-fill.fill-fade-in span:hover::before {
+  opacity: 1 !important;
+}
+
+.text-fill.fill-up span::before{
+width: 100% !important;
+height: 0;
+-webkit-transition: var(--transition-fastest);
+-moz-transition: var(--transition-fastest);
+transition: var(--transition-fastest);
+}
+
+.text-fill.fill-up span:hover::before {
+  height: 100% !important;
 }
 
 /* ======== test utility ======== */

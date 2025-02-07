@@ -11,50 +11,128 @@
 
     <!-- TODO: have to remove this befory delivery -->
     <link rel="stylesheet" href="/assets/css/test.css" />
-
   </head>
-  <body style="background:black;">
-    <header class="ANS_header">
-
-    </header>
-
+  <body style="background: black">
+    <header class="ANS_header"></header>
 
     <!-- sidebar starts -->
-     <aside class="ANS_sidebar">
-        <div class="sidebar-toggle-container ANS_flex flex_column">
-            <a href="/" class="top-small-logo">
-              <img src="assets/img/sidebar-site-logo.png" alt="site logo">
-            </a>
-            <button class="sidebar-toggler-btn">
-               <span></span> <span></span> <span></span> <span></span>
-            </button>
+    <aside class="ANS_sidebar">
+      <div class="sidebar-toggle-container ANS_flex flex_column">
+        <a href="/" class="top-small-logo">
+          <img src="assets/img/sidebar-site-logo.png" alt="site logo" />
+        </a>
+        <button class="sidebar-toggler-btn">
+          <span></span> <span></span> <span></span> <span></span>
+        </button>
 
-            <div class="active-page-info">
-              <span class="info">INTRO</span>
-            </div>
+        <div class="active-page-info">
+          <span class="info">INTRO</span>
         </div>
+      </div>
 
+      <!-- sidbar drawer -->
+      <div class="sidebar-drawer-wrap">
+        <div class="sidebar-inner ANS_flex ">
+          <!-- menu column -->
+          <div class="menu-col ANS_flex flex_column justify_center">
+              <div class="sidebar-nav-logo-wrap">
+                <a class="site-nav-logo">
+                  <img src="assets/img/ANS-site-logo.png" alt="Site logo" />
+                </a>
+              </div>
+              <ul class="ANS_menu ANS_flex flex_column">
+                <li><a class="text-anim" href="#">HOME</a></li>
+                <li><a class="text-anim" href="#">SERVICE</a></li>
+                <li><a class="text-anim" href="#">WHY ANS MUSIC</a></li>
+                <li><a class="text-anim" href="#">DISTRIBUTION SIGNUP</a></li>
+                <li><a class="text-anim" href="#">CONTACT</a></li>
+                <li><a class="text-anim" href="#">ABOUT</a></li>
+                <li><a class="text-anim" href="#">CLIENT LOGIN</a></li>
+              </ul>
+            <!-- <div class="phone-info flex_grow">
+              <div>
+                <img src="assets/img/phone.webp" alt="Phone icon" />
+                <p>(08) 84701714</p>
+              </div>
+            </div> -->
+          </div>
 
-        <!-- sidbar drawer -->
-         <div class="sidebar-drawer-wrap">
-           <div class="sidebar-inner ANS_flex">
-              
-           </div>
-         </div>
-     </aside>
+          <!-- contact column -->
+          <div class="contact-col ANS_flex flex_align_center">
+            <div class="ANS_flex">
+              <div class="ANS_contact-info">
+                <h5 class="fs-md">OFFICES</h5>
+                <address>
+                  <span class="city">Adelaide</span>
+                  <span class="city-address">
+                    evel 2, 66 Wyatt Street, Adelaide, SA 5000
+                  </span>
+                </address>
+
+                <address>
+                  <span class="city">Melbourne</span>
+                  <span class="city-address">
+                    Suite 100, Level 4/54 Wellington Street, Collingwood,VIC
+                    3021
+                  </span>
+                </address>
+
+                <address>
+                  <span class="city">Sydney</span>
+                  <span class="city-address">
+                    The Commons Surry Hills, 285A Crown St, Surry Hills NSW 2010
+                  </span>
+                </address>
+              </div>
+
+              <div class="ANS_contact-form">
+                <h5 class="fs-md">Start A Conversation</h5>
+                <form action="">
+                  <input name="name" id="name" type="text" placeholder="Name">
+                  <input name="email" id="email" type="email" placeholder="Email">
+                  <textarea name="message" id="message" type="text" placeholder="Message"></textarea>
+                  <input name="verifyNnonce" id="verifyNnonce" placeholder="What is 1+2=?" type="text" >
+                  <button type="submit" class="fs-base ANS_btn btn-b-cyan">SEND</button>
+                </form>
+
+                <div class="social-links ANS_flex flex_align_center">
+                    <a href="#" target="_blank">
+                      <img src="assets/img/facebook-icon.webp" alt="Facebook icon">
+                    </a>
+                    <a href="#" target="_blank">
+                      <img src="assets/img/twitter-icon.webp" alt="Twitter icon">
+                    </a>
+                    <a href="#" target="_blank">
+                      <img src="assets/img/linkedin-icon.webp" alt="Linkedin icon">
+                    </a>
+                    <a href="#" target="_blank">
+                      <img src="assets/img/instragram-icon.webp" alt="Instragram icon">
+                    </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- our partners -->
+             <div class="our-partners">
+
+             </div>
+          </div>
+        </div>
+      </div>
+    </aside>
     <!-- sidebar ends -->
 
     <main class="ANS_main-wrapper">
       <!-- page banner starts -->
       <!-- page banner ends -->
 
-      <h1 class="text-fill fill-clr-white" style="font-size: 5rem;" ><span data-text="Demo">Demo</span> </h1>
+      <h1 class="text-fill fill-clr-white" style="font-size: 5rem">
+        <span data-text="Demo">Demo</span>
+      </h1>
 
-      <div style="min-width: 700px;margin: 400px auto;">
-
+      <div style="min-width: 700px; margin: 400px auto">
         <button class="ANS_btn btn-b-cyan">OUR WORK</button>
       </div>
-
     </main>
 
     <footer></footer>
