@@ -18,9 +18,11 @@
     <!-- sidebar starts -->
     <aside class="ANS_sidebar">
       <div class="sidebar-toggle-container ANS_flex flex_column">
-        <a href="/" class="top-small-logo">
-          <img src="assets/img/sidebar-site-logo.png" alt="site logo" />
-        </a>
+        <div class="ANS_sidebar-logo-wrap small">
+          <a href="/" id="sidebar-small-logo" class="top-small-logo">
+            <img src="assets/img/sidebar-site-logo.png" alt="site logo" />
+          </a>
+        </div>
         <button class="sidebar-toggler-btn">
           <span></span> <span></span> <span></span> <span></span>
         </button>
@@ -58,7 +60,7 @@
           </div>
 
           <!-- contact column -->
-          <div class="contact-col ANS_flex flex_align_center">
+          <div class="contact-col ANS_flex flex_column">
             <div class="ANS_flex contact-wrapper">
               <div class="ANS_contact-info ANS_flex flex_column">
                 <h5 class="fs-md">OFFICES</h5>
@@ -84,17 +86,25 @@
                   </span>
                 </address>
               </div>
+              
 
               <div class="ANS_contact-form-wrap">
                 <h5 class="fs-md">Start A Conversation</h5>
                 <form class="ANS_contact-form ANS_flex flex_column" action="">
                   <input name="name" id="name" type="text" placeholder="Name">
                   <input name="email" id="email" type="email" placeholder="Email">
-                  <textarea name="message" id="message" type="text" placeholder="Message"></textarea>
+                  <textarea rows="1" name="message" id="message" type="text" placeholder="Message"></textarea>
                   <input name="verifyNnonce" id="verifyNnonce" placeholder="What is 1+2=?" type="text" >
                   <button type="submit" class="fs-base ANS_btn btn-b-cyan">SEND</button>
                 </form>
 
+                
+                <div class="phone-wrap ANS_flex flex_align_center">
+                  <img src="assets/img/phone.webp" alt="phone icon">
+                  <p class="nowrap fs-md">(08) 8470 1714</p>
+                </div>
+
+                <!-- socical links -->
                 <div class="social-links ANS_flex flex_align_center">
                     <a href="#" target="_blank">
                       <img src="assets/img/facebook-icon.webp" alt="Facebook icon">
@@ -109,12 +119,22 @@
                       <img src="assets/img/instragram-icon.webp" alt="Instragram icon">
                     </a>
                 </div>
+              
               </div>
             </div>
 
             <!-- our partners -->
-             <div class="our-partners">
-
+             <div class="our-partners-wrapper marquee-container ANS_flex flex_column">
+              <div class="marquee-container-inner ANS_flex flex_align_center">
+                <img src="assets/img/facebook-icon.webp" alt="partner image">
+                <img src="assets/img/amazon.webp" alt="partner image">
+                <img src="assets/img/apple.webp" alt="partner image">
+                <img src="assets/img/Youtube.webp" alt="partner image">
+                <img src="assets/img/facebook-icon.webp" alt="partner image">
+                <img src="assets/img/amazon.webp" alt="partner image">
+                <img src="assets/img/apple.webp" alt="partner image">
+                <img src="assets/img/Youtube.webp" alt="partner image">
+             </div>
              </div>
           </div>
         </div>
