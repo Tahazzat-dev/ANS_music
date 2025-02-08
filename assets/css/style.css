@@ -588,7 +588,10 @@ width: 30px;
 
 
 
-
+/* main content style starts  */
+.ANS_main-wrapper{
+  padding-left: 90px;
+}
 
 
 
@@ -877,7 +880,6 @@ width: 30px;
 
   .ANS_header, .ANS_main-wrapper, .ANS_footer {
 padding: 0;
-
 }
 
 
@@ -1036,6 +1038,10 @@ padding: 0;
 /* main content style starts */
 .ANS_main-wrapper{
   padding-top: 80px;
+}
+
+.ANS_footer{
+  padding: 40px 0px;
 }
 
 /* footer style starts */
