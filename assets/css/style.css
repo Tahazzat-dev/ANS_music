@@ -3,7 +3,7 @@
   height: 8px;
 }
 
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   background: #343434;
   border-radius: 10px;
 }
@@ -15,7 +15,7 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(181, 181, 181);
-}
+} */
 
 body {
   font-size: var(--fs-base);
@@ -128,7 +128,8 @@ body {
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #0ff;
+  /* background: #0ff; */
+  background: var(--light-yellow);
   opacity: 1;
   left: 0;
   transform: rotate(0deg);
@@ -169,7 +170,8 @@ body {
 
 .ANS_sidebar .active-page-info {
   width: 50%;
-  color: #4178b8;
+  /* color: #4178b8; */
+  color: var(--light-yellow);
   font-size: 10px;
   line-height: 1;
   font-family: var(--ff-futura-std);
@@ -399,7 +401,8 @@ body {
   border: none;
   background-color: transparent;
   padding: 10px 0px;
-  border-bottom: 1px solid var(--cyan);
+  /* border-bottom: 1px solid var(--cyan); */
+  border-bottom: 1px solid var(--light-yellow);
   outline: none;
   color: var(--white);
 }
@@ -491,6 +494,7 @@ height: auto;
   content: '';
   border-radius: 4px;
   background-color: var(--cyan);
+  background-color: var(--light-yellow);
   transition: var(--transition-normal);
 }
 
