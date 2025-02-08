@@ -476,11 +476,13 @@ ol {
   -webkit-text-stroke-width: 1px;
   position: relative;
   display: inline-block;
+  color: var(--neon-magenda);
 }
 
 .text-fill span {
   display: inline-block;
   position: relative;
+  color: var(--neon-magenda);
 }
 
 .text-fill span::before{
@@ -501,10 +503,18 @@ ol {
  .text-fill:hover span:before{
   width: 100%;
 }
+.text-fill.neon-stroke,
+.text-fill.neon-stroke span {
+  color: var(--neon-magenda);
+}
 
-.text-fill.neon-stroke span:before {
+.text-fill.neon-stroke span::before {
   color: var(--neon-magenda) !important;
   -webkit-text-fill-color: var(--neon-magenda) !important;
+}
+
+.text-fill.yellow-stroke span {
+  color: var(--light-yellow) !important;
 }
 
 .text-fill.yellow-stroke span:before {
@@ -512,6 +522,9 @@ ol {
   -webkit-text-fill-color: var(--light-yellow) !important;
 }
 
+.text-fill.green-stroke span {
+  color: var(--light-green) !important;
+}
 .text-fill.green-stroke span:before {
   color: var(--light-green) !important;
   -webkit-text-fill-color: var(--light-green) !important;
