@@ -118,6 +118,7 @@ ol {
   --dark-blue:#03091B;
   --deep-navy-blue:#081239;
   --deep-shade-blue:#8182a4;
+  --bg-overlay-transparent: rgba(0, 0, 0, 0.72);
 
   --ff-road-rage: 'Road Rage', sans-serif;
   --ff-futura-std: 'Futura Std', sans-serif;
@@ -469,100 +470,86 @@ ol {
 
 
 /* =============== animation utility ============ */
-.sidenav-link,
 .text-fill {
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   position: relative;
+  display: inline-block;
 }
 
-.sidenav-link
 .text-fill span {
   display: inline-block;
-  position: relative
+  position: relative;
 }
 
-.sidenav-link::before,
 .text-fill span::before{
   top: 0;
   left: 0;
   width: 0;
+  color: #fff;
   overflow: hidden;
   position: absolute;
   content: attr(data-text);
-  -webkit-transition: var(--transition-delayed);
-  -moz-transition: var(--transition-delayed);
-  transition: var(--transition-delayed);
+  -webkit-transition: all 1.0s ease;
+  -moz-transition: all 1.0s ease;
+  transition: all 1.0s ease;
+  -webkit-text-fill-color: #fff;
   white-space: nowrap;
 }
 
-.sidenav-link:hover::before,
-.text-fill span:hover::before {
-  width: 100%
+ .text-fill:hover span:before{
+  width: 100%;
 }
 
-
-.sidenav-link.fill-clr-neon,
-.text-fill.fill-clr-neon{
-    color: var(--neon-magenda);
-}
-
-.sidenav-link.fill-clr-neon::before,
-.text-fill.fill-clr-neon span::before{
-   color:var(--neon-magenda) !important;
+.text-fill.neon-stroke span:before {
+  color: var(--neon-magenda) !important;
   -webkit-text-fill-color: var(--neon-magenda) !important;
 }
 
-.sidenav-link.fill-clr-cyan,
-.text-fill.fill-clr-cyan{
-  color: var(--cyan);
+.text-fill.yellow-stroke span:before {
+  color: var(--light-yellow) !important;
+  -webkit-text-fill-color: var(--light-yellow) !important;
 }
 
-.sidenav-link.fill-clr-cyan::before,
-.text-fill.fill-clr-cyan span::before{
- color:var(--cyan) !important;
--webkit-text-fill-color: var(--cyan) !important;
+.text-fill.green-stroke span:before {
+  color: var(--light-green) !important;
+  -webkit-text-fill-color: var(--light-green) !important;
 }
 
-.sidenav-link.fill-clr-white,
-.text-fill.fill-clr-white{
+.sidenav-link {
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  position: relative;
   color: var(--white);
 }
 
-.sidenav-link.fill-clr-white::before,
-.text-fill.fill-clr-white span::before{
- color:var(--white) !important;
--webkit-text-fill-color: var(--white) !important;
+.sidenav-link {
+  display: inline-block;
+  position: relative
 }
 
-.sidenav-link.fill-fade-in::before,
-.text-fill.fill-fade-in span::before{
-width: 100% !important;
--webkit-transition: var(--transition-fastest);
--moz-transition: var(--transition-fastest);
-transition: var(--transition-fastest);
+.sidenav-link::before{
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  content: attr(data-text);
+  -webkit-transition: var(--transition-fastest);
+  -moz-transition: var(--transition-fastest);
+  transition: var(--transition-fastest);
+  white-space: nowrap;
+  color:var(--white) !important;
+-webkit-text-fill-color: var(--white) !important;
 opacity: 0;
 }
 
-.sidenav-link.fill-fade-in:hover::before,
-.text-fill.fill-fade-in span:hover::before {
+.sidenav-link.fill-fade-in:hover::before {
   opacity: 1 !important;
 }
 
-.sidenav-link.fill-up::before,
-.text-fill.fill-up span::before{
-width: 100% !important;
-height: 0;
--webkit-transition: var(--transition-fastest);
--moz-transition: var(--transition-fastest);
-transition: var(--transition-fastest);
-}
-
-.sidenav-link.fill-up:hover::before,
-.text-fill.fill-up span:hover::before {
-  height: 100% !important;
-}
 
 /* ======== test utility ======== */
 .text-center {
