@@ -188,7 +188,7 @@ ol {
     --lh-xl: 36px;/* increase by 4px */
     --lh-2xl: 40px; /* increase by 6px */
     --lh-3xl: 40px; /* increase by 13px */
-    --lh-huge: 28px; /* increase by 25px */
+    --lh-huge: 110%; /* increase by 25px */
     --lh-full: 100%;
   }
 }
