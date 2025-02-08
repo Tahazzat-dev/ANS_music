@@ -2,7 +2,12 @@
     // Modern equivalent of $(document).ready()
     $(function () { 
     
-
+        AOS.init({
+            duration: 1000,
+            offset:50,
+            easing:'ease-in-out',
+            once:true,
+        });
         /*
         ========= all js code goes here======
         */
