@@ -77,7 +77,7 @@ body {
   height: 100%;
   width: 70px;
   background: var(--deep-navy-blue);
-  z-index: 99;
+  z-index: 9999;
 }
 
 .ANS_sidebar-logo-wrap.small {
@@ -187,11 +187,12 @@ body {
   transform: translateX(-100%);
   background-color: var(--dark-blue);
   transition: var(--transition-normal);
-  z-index: 40;
+  z-index: 999;
 }
 
 .ANS_sidebar .sidebar-drawer-wrap.open {
   transform: translateX(0);
+  z-index: 999;
 }
 
 .ANS_sidebar .sidebar-drawer-wrap .sidebar-inner {
@@ -1629,6 +1630,7 @@ gap: 35px;
   /* sidebar contact info  */
   .ANS_sidebar .contact-col {
     padding: 4%;
+    padding-top: 100px;
   }
 
   .ANS_sidebar .contact-col .contact-wrapper {
