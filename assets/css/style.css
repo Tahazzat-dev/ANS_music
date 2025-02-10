@@ -1081,6 +1081,7 @@ width: 30px;
 .ANS_about-banner-content h3{
   font-family:var(--ff-road-rage);
   color: var(--light-green);
+  text-align: center;
 }
 
 
@@ -1104,6 +1105,7 @@ width: 30px;
   border-radius: 20px;
   border: 1px solid rgba(128, 128, 128, 0.746);
   overflow: hidden;
+  min-width:350px;
 }
 
 .ANS_history-inner  .section_title{
@@ -1576,6 +1578,16 @@ gap: 40px;
   margin: 0 15px;
 }
 
+
+/* ======= about us page ======== */
+.ANS_history-wrap {
+  padding-top: 100px;
+}
+
+.ANS_analytics-wrap {
+  padding: 100px 0;
+}
+
 }
 
 /* tablets ( extra large )  */
@@ -1693,6 +1705,30 @@ gap: 40px;
 }
 
 
+/* =============about us page======= */
+.ANS_history-wrap {
+  padding-top: 90px;
+}
+
+.ANS_history-inner {
+  gap: 50px;
+  flex-direction: column;
+  }
+  
+  .ANS_history-inner .thum-container {
+    width: 100%;
+    min-width: 50px;
+  }
+
+
+  /* analytics section */
+  .ANS_analytics-wrap {
+    padding: 90px 0;
+  }
+
+
+
+
 
 }
 
@@ -1749,6 +1785,18 @@ gap: 40px;
 
 .ANS_contact-banner-content .contact-info-card {
   margin-bottom: 25px;
+}
+
+
+/* =============about us page======= */
+
+.ANS_history-wrap {
+  padding-top: 80px;
+}
+
+/* analytics section */
+.ANS_analytics-wrap {
+  padding: 80px 0;
 }
 
 
@@ -1979,7 +2027,35 @@ padding: 0;
 }
 
 
+/* ===== about us ========= */
+.ANS_history-wrap {
+  padding-top: 70px;
+}
+
+.ANS_history-inner {
+  gap: 35px;
+}
+
+/* analytics section */
+.ANS_analytics-wrap {
+  padding: 70px 0;
+}
+
+.ANS_analytics-inner .content {
+  background: var(--dark-black);
+  padding: 10;
+  gap: 40px;
+  flex-direction: column;
+}
+
+
+
+
+
 /* end */
+
+
+
 
 
 
@@ -2028,5 +2104,25 @@ padding: 0;
 .ANS_contact-banner-content .form-container {
   padding: 20px;
 }
+
+/* ========= about us page ======== */
+.ANS_history-wrap {
+  padding-top: 60px;
+}
+.ANS_history-inner {
+  gap: 30px;
+}
+
+.ANS_history-inner  .section_title {
+  margin-bottom: 15px;
+}
+
+/* analytics section */
+.ANS_analytics-wrap {
+  padding: 60px 0;
+}
+
+
+
 
 }
