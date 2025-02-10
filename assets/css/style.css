@@ -487,6 +487,10 @@ z-index: 99;
   cursor: pointer;
 }
 
+.ANS_nav ul a.active{
+  font-weight: 600;
+}
+
 .ANS_nav ul a:not(.ANS_btn)::before{
   position: absolute ;
   top: 110%;
@@ -902,7 +906,7 @@ width: 30px;
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(to right, #000000c3, #0000005f,#000000c3);
+  background: linear-gradient(to right, #000000c3, #0000000d, #000000c3);
   z-index: 9;
   width: 100%;
   height: 100%;
@@ -1023,9 +1027,331 @@ width: 30px;
 {
   color: var(--white);
 }
-.ANS_contact-banner-content .form-container{}
-.ANS_contact-banner-content .form-container{}
-.ANS_contact-banner-content .form-container{}
+
+/* ========= about us page ======= */
+.ANS_about-banner-wrapper{
+  width: 100%;
+  height: 45vh;
+  height: 45dvh;
+  min-height: 450px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.ANS_about-banner-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.ANS_about-banner-bg .banner-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: linear-gradient( to top,#00000067,#00000067, #00000067, #000000c7); */
+  background: rgba(0, 0, 0, 0.653);
+  backdrop-filter: blur(5px);
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+}
+
+.ANS_about-banner-bg picture,
+.ANS_about-banner-bg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.ANS_about-banner-container{
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+.ANS_about-banner-content{
+  width: 100%;
+  height: 100%;
+}
+
+.ANS_about-banner-content h3{
+  font-family:var(--ff-road-rage);
+  color: var(--light-green);
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+/* our history section */
+.ANS_history-wrap{
+  width: 100%;
+  padding-top: 120px;
+}
+
+.ANS_history-inner{
+  gap: 50px;
+}
+.ANS_history-inner .history-content{
+  width: 100%;
+}
+
+.ANS_history-inner .thum-container{
+  width: 50%;
+  max-width: 500px;
+  background-color: rgba(128, 128, 128, 0.129);
+  border-radius: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.746);
+  overflow: hidden;
+  min-width:350px;
+}
+
+.ANS_history-inner  .section_title{
+  margin-bottom: 20px;
+}
+
+.ANS_history-inner  p{
+margin-bottom: 10px;
+}
+
+.ANS_section-divider{
+  width: 100%;
+  background-color: transparent;
+  height: 1px;
+  border-top: 1px solid var(--white);
+  margin: 50px 0;
+}
+
+/* ANS analytics section */
+.ANS_analytics-wrap{
+  width: 100%;
+  padding: 120px 0;
+}
+
+.ANS_analytics-inner .content{
+  background: var(--dark-blue);
+  width: 100%;
+  height: auto;
+  padding: 30px 20px;
+  justify-content: center;
+  gap: 100px;
+}
+
+.ANS_analytics-inner .content h4{
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.ANS_analytics-inner .content p{
+  font-weight: 600;
+  text-align: center;
+}
+
+/* our team section */
+
+.ANS_team-wrap{
+  width: 100%;
+  /* padding: 120px; */
+}
+.ANS_team-inner{
+  position: relative;
+}
+
+
+.ANS_team-inner .section-subtitle{
+  margin-top: 20px;
+  font-family: var(--ff-road-rage);
+  color: var(--light-green);
+  max-width: 700px;
+  width: 100%;
+}
+
+.ANS_teams-container{
+  gap: 50px;
+  padding-top: 50px;
+  padding-block:20px;
+}
+
+.ANS_team-details{
+ gap: 50px;
+}
+
+.ANS_team-details .team-profile{
+  width: 50%;
+  max-width: 300px;
+  min-width: 300px;
+  min-height: 300px;
+  overflow: hidden;
+  height: 300px;
+  border: 1px solid ;
+  border-radius: 15px;
+  border: 1px solid rgba(128, 128, 128, 0.746);
+}
+
+.ANS_team-details .team-profile img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.ANS_team-details .role{
+  min-width: 200px;
+  text-align: center;
+}
+
+.ANS_team-details .role h5{
+ font-family: var(--ff-road-rage);
+ color: rgba(105, 105, 105, 0.65);
+}
+
+.ANS_team-details .content .name{
+  flex-grow: 1;
+}
+.ANS_team-details .content .name{
+  margin-bottom: 10px;
+}
+.ANS_team-details .content .team-social-links{
+  margin-top: 20px;
+}
+
+/* our expertise section */
+
+.ANS_expertise-wrap{
+  width: 100%;
+  padding-top: 120px;
+}
+.ANS_expertise-inner{
+  position: relative;
+}
+
+.ANS_expertise-inner .section-subtitle{
+  margin-top: 20px;
+  font-family: var(--ff-road-rage);
+  color: var(--light-green);
+  max-width: 700px;
+  width: 100%;
+}
+
+
+.ANS_expertise-container{
+  gap: 50px;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+.ANS_expertise-container .expertise-card{
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.129);
+  border-radius: 15px;
+  border: 1px solid rgba(128, 128, 128, 0.746);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  display: block;
+}
+
+
+.ANS_expertise-container .expertise-card .thum{
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+}
+.ANS_expertise-container .expertise-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-normal);
+}
+
+.ANS_expertise-container .expertise-card:hover img{
+  scale: 1.1;
+  cursor: pointer;
+ }
+
+.ANS_expertise-container .content{
+  padding: 20px;
+}
+
+.ANS_expertise-container .content p{
+  margin: 10px 0 25px 0;
+}
+
+/* company location */
+.ANS_company-location-wrap{
+  width: 100%;
+  padding: 120px 0;
+}
+
+.ANS_company-location-inner{
+  width: 100%;
+  height: 100vh;
+}
+.ANS_company-location-wrap img{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ========= service page ======= */
+.ANS_service-banner-wrapper{
+  width: 100%;
+  height: 55vh;
+  height: 55dvh;
+  min-height: 550px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.ANS_service-banner-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.ANS_service-banner-bg .banner-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: linear-gradient( to top,#00000067,#00000067, #00000067, #000000c7); */
+  background: rgba(0, 0, 0, 0.653);
+  backdrop-filter: blur(5px);
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+}
+
+.ANS_service-banner-bg picture,
+.ANS_service-banner-bg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.ANS_service-banner-container{
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+.ANS_service-banner-content{
+  width: 100%;
+  height: 100%;
+}
+
+.ANS_service-banner-content h3{
+  font-family:var(--ff-road-rage);
+  color: var(--light-green);
+  text-align: center;
+  max-width: 500px;
+  margin-top: 10px;
+}
 
 
 /* ================= 
@@ -1313,6 +1639,28 @@ width: 30px;
   margin: 0 15px;
 }
 
+
+/* ======= about us page ======== */
+.ANS_history-wrap {
+  padding-top: 100px;
+}
+
+.ANS_analytics-wrap {
+  padding: 100px 0;
+}
+
+.ANS_expertise-wrap {
+    padding-top: 100px;
+}
+
+  
+   .ANS_company-location-wrap {
+    padding: 100px 0;
+} 
+
+
+
+
 }
 
 /* tablets ( extra large )  */
@@ -1430,6 +1778,50 @@ width: 30px;
 }
 
 
+/* =============about us page======= */
+.ANS_history-wrap {
+  padding-top: 90px;
+}
+
+.ANS_history-inner {
+  gap: 50px;
+  flex-direction: column;
+  }
+  
+  .ANS_history-inner .thum-container {
+    width: 100%;
+    min-width: 50px;
+  }
+
+
+  /* analytics section */
+  .ANS_analytics-wrap {
+    padding: 90px 0;
+  }
+
+  .ANS_team-details {
+    gap: 20px;
+}
+
+.ANS_team-details .team-profile {
+  width: 40%;
+  max-width: 200px;
+  min-width: 150px;
+  min-height: 150px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+  .ANS_expertise-wrap {
+    padding-top: 90px;
+}
+
+   .ANS_company-location-wrap {
+    padding: 90px 0;
+} 
+
+
+
 
 }
 
@@ -1487,6 +1879,30 @@ width: 30px;
 .ANS_contact-banner-content .contact-info-card {
   margin-bottom: 25px;
 }
+
+
+/* =============about us page======= */
+
+.ANS_history-wrap {
+  padding-top: 80px;
+}
+
+/* analytics section */
+.ANS_analytics-wrap {
+  padding: 80px 0;
+}
+
+    .ANS_expertise-wrap {
+    padding-top: 80px;
+}
+
+
+    .ANS_company-location-wrap {
+    padding: 80px 0;
+}
+
+
+
 
 
 }
@@ -1716,7 +2132,55 @@ padding: 0;
 }
 
 
+/* ===== about us ========= */
+.ANS_history-wrap {
+  padding-top: 70px;
+}
+
+.ANS_history-inner {
+  gap: 35px;
+}
+
+/* analytics section */
+.ANS_analytics-wrap {
+  padding: 70px 0;
+}
+
+.ANS_analytics-inner .content {
+  background: var(--dark-black);
+  padding: 10;
+  gap: 40px;
+  flex-direction: column;
+}
+
+.ANS_team-details .team-profile {
+  width: 25%;
+  max-width: 120px;
+  min-width: 100px;
+  min-height: 80px;
+  overflow: hidden;
+  height: 120px;
+  border-radius: 12px;
+}
+
+.ANS_team-details .role {
+  min-width: 120px;
+  text-align: center;
+}
+
+    .ANS_expertise-wrap {
+    padding-top: 70px;
+}
+
+
+
+
+
 /* end */
+
+
+
+
 
 
 
@@ -1764,6 +2228,73 @@ padding: 0;
 /* ========= contact page ======== */
 .ANS_contact-banner-content .form-container {
   padding: 20px;
+}
+
+/* ========= about us page ======== */
+.ANS_history-wrap {
+  padding-top: 60px;
+}
+.ANS_history-inner {
+  gap: 30px;
+}
+
+.ANS_history-inner  .section_title {
+  margin-bottom: 15px;
+}
+
+/* analytics section */
+.ANS_analytics-wrap {
+  padding: 60px 0;
+}
+
+.ANS_team-details .team-profile {
+  width: 100%;
+  max-width: 500px;
+  min-width: 250px;
+  min-height: 300px;
+  overflow: hidden;
+  height: 120px;
+  border-radius: 12px;
+}
+
+.ANS_team-details .role {
+  min-width: 120px;
+  text-align: center;
+}
+
+.ANS_team-details {
+ flex-direction: column;
+}
+
+.ANS_team-details:nth-child(even) {
+  flex-direction: column-reverse;
+ }
+
+ .ANS_teams-container {
+  gap: 70px;
+  padding-top: 40px;
+   padding-bottom: 10px
+}
+
+.ANS_expertise-container {
+  padding-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.ANS_expertise-container .expertise-card .thum {
+  width: 100%;
+  overflow: hidden;
+  height: 200px;
+}
+
+  
+    .ANS_expertise-wrap {
+    padding-top: 70px;
+}
+
+  .ANS_company-location-wrap {
+    padding: 70px 0;
 }
 
 }
