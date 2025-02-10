@@ -111,6 +111,7 @@ ol {
   --dark-black:#050D28;
   --cyan : #00FFFF;
   --light-green : #61aa3d;
+  /* --light-green : #02493b; */
   --dark-orange : #d80032;
   --light-yellow : #fdff4b;
   --dark-yellow : #fafd14;
@@ -174,7 +175,7 @@ ol {
 
     --fs-xl: 20px; /* increase by 1px */
     --fs-2xl: 20px; /* increase by 1px */
-    --fs-3xl: 27px; /* increase by 1.5 px */
+    --fs-3xl: 25px; /* increase by 1.5 px */
     --fs-4xl: 27px; /* increase by 4px */
 
     --fs-5xl: 30px; /* increase by 7px */
@@ -204,7 +205,7 @@ ol {
     /* ==== global font size variables ====  */
     --fs-xl: 23px; /* increase by 1px */
     --fs-2xl: 21px; /* increase by 1px */
-    --fs-3xl: 28.5px; /* increase by 1.5 px */
+    --fs-3xl: 27.5px; /* increase by 1.5 px */
     --fs-4xl: 31px; /* increase by 4px */
 
     --fs-5xl: 37px; /* increase by 7px */
