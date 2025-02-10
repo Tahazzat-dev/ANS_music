@@ -1424,6 +1424,7 @@ object-fit: cover;
 .ANS_service-wrapper{
   padding-top: 120px;
   width: 100%;
+  gap: 120px;
 }
 
 .ANS_service-container{
@@ -1444,6 +1445,7 @@ object-fit: cover;
   width: 100%;
   height: 100%;
   transition: var(--transition-normal);
+  object-fit:cover;
 }
 
 .ANS_service-container .section-thum img:hover{
@@ -1799,6 +1801,21 @@ object-fit: cover;
 } 
 
 
+/* ========= service page ============ */
+
+.ANS_distribution-plartform-wrap {
+  padding-top: 100px;
+}
+
+.ANS_service-wrapper {
+  padding-top: 100px;
+  gap: 100px;
+}
+
+.ANS_different-stores-wrap{
+  padding: 100px 0;
+}
+
 
 
 }
@@ -1968,6 +1985,19 @@ object-fit: cover;
 }
 
 
+.ANS_distribution-plartform-wrap {
+  padding-top: 90px;
+}
+
+.ANS_service-wrapper {
+  padding-top: 90px;
+  gap: 90px;
+}
+
+.ANS_different-stores-wrap{
+  padding: 90px 0;
+}
+
 
 
 }
@@ -2049,6 +2079,45 @@ object-fit: cover;
 }
 
 
+/* ========= service page ============ */
+
+.ANS_global-plartforms {
+  flex-direction: column;
+}
+
+.ANS_service-container {
+  max-width: 1300px;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.ANS_service-wrapper .ANS_service-container:nth-child(odd) {
+  flex-direction: column-reverse;
+}
+
+.ANS_service-container .section-thum {
+  width: 100%;
+  max-width: 500px;
+}
+
+.ANS_service-container .content {
+  width: 100%;
+}
+
+
+/* ====== service page ========= */
+.ANS_distribution-plartform-wrap {
+  padding-top: 80px;
+}
+
+.ANS_service-wrapper {
+  padding-top: 80px;
+  gap: 80px;
+}
+
+.ANS_different-stores-wrap{
+  padding: 80px 0;
+}
 
 
 
@@ -2320,10 +2389,26 @@ padding: 0;
 }
 
 
+/* ====== service page ========= */
+.ANS_distribution-plartform-wrap {
+  padding-top: 70px;
+}
+
+.ANS_service-wrapper {
+  padding-top: 70px;
+  gap: 70px;
+}
+
+.ANS_different-stores-wrap{
+  padding: 70px 0;
+}
 
 
 
 /* end */
+
+
+
 
 
 
@@ -2443,5 +2528,12 @@ padding: 0;
   .ANS_company-location-wrap {
     padding: 70px 0;
 }
+
+/* ========= service page ======== */
+.ANS_service-container .section-thum {
+  height: 240px;
+}
+
+
 
 }
