@@ -172,8 +172,8 @@ ol {
     --fs-md: 18px;
     --fs-lg: 20px;
 
-    --fs-xl: 22px; /* increase by 1px */
-    --fs-2xl: 25px; /* increase by 1px */
+    --fs-xl: 20px; /* increase by 1px */
+    --fs-2xl: 20px; /* increase by 1px */
     --fs-3xl: 27px; /* increase by 1.5 px */
     --fs-4xl: 27px; /* increase by 4px */
 
