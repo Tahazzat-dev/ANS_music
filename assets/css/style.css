@@ -986,6 +986,7 @@ width: 30px;
   flex-grow: 1;
   align-items: center;
   justify-content: space-between;
+  gap: 25px;
 }
 
 .ANS_contact-banner-content .ANS_office-address{
@@ -1469,6 +1470,25 @@ width: 30px;
 }
 
 
+/* ========== contact page ============ */
+.ANS_contact-banner-content{
+  flex-direction: column-reverse;
+  gap: 50px;
+  padding:100px 0;
+}
+
+.ANS_contact-banner-content .ANS_office-address {
+  max-width: 400px;
+  width: 100%;
+  display: block;
+  
+}
+
+.ANS_contact-banner-content .contact-info-card {
+  margin-bottom: 25px;
+}
+
+
 }
 
 /* phones ( extra large )  */
@@ -1738,6 +1758,12 @@ padding: 0;
 
  .ANS_home-banner-wrapper {
   min-height: 500px;
+}
+
+
+/* ========= contact page ======== */
+.ANS_contact-banner-content .form-container {
+  padding: 20px;
 }
 
 }
