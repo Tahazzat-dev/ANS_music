@@ -13,11 +13,11 @@
     <!-- TODO: have to remove this befory delivery -->
     <link rel="stylesheet" href="/assets/css/test.css" />
   </head>
-  <body style="background: black">
+  <body>
     <header class="ANS_header">
       <div class="ANS_header-inner ANS_flex flex_align_center justify_between">
         <div class="nav-logo-wrap">
-          <a href="#" class="site-nav-logo">
+          <a href="/" class="site-nav-logo">
             <img src="assets/img/ANS-site-logo.png" alt="Site logo" />
           </a>
         </div>
@@ -25,20 +25,36 @@
         <!-- desktop navbar -->
         <nav class="ANS_nav">
           <ul class="ANS_flex flex_align_center">
-            <li data-aos="zoom-in-down" class="home-link"><a class="" href="#">HOME</a></li>
-            <li data-aos="zoom-in-down"><a class="fs-base" href="#">SERVICE</a></li>
-            <li data-aos="zoom-in-down"><a class="fs-base" href="#">WHY ANS MUSIC</a></li>
-            <li data-aos="zoom-in-down"><a class="fs-base" target="_blank" href="https://ansbackstage.com/auth/register" >DISTRIBUTION SIGNUP</a></li>
-            <li data-aos="zoom-in-down" class="contact-link">
-              <a class="fs-base active" href="#">CONTACT</a>
+            <li data-aos="zoom-in-down" class="home-link">
+              <a class="fs-base" href="/">HOME</a>
             </li>
-            <li data-aos="zoom-in-down" class="about-link"><a class="fs-base" href="#">ABOUT</a></li>
+            <li data-aos="zoom-in-down">
+              <a class="fs-base " href="/services.html">SERVICE</a>
+            </li>
+            <li data-aos="zoom-in-down">
+              <a class="fs-base" href="#">WHY ANS MUSIC</a>
+            </li>
+            <li data-aos="zoom-in-down">
+              <a
+                class="fs-base"
+                target="_blank"
+                href="https://ansbackstage.com/auth/register"
+                >DISTRIBUTION SIGNUP</a
+              >
+            </li>
+            <li data-aos="zoom-in-down" class="contact-link">
+              <a class="fs-base active" href="/contact-us.html">CONTACT</a>
+            </li>
+            <li data-aos="zoom-in-down" class="about-link">
+              <a class="fs-base" href="/about-us.html">ABOUT</a>
+            </li>
             <li data-aos="fade-left">
-              <a 
-              class="fs-base ANS_btn btn-b-yellow" 
-              target="_blank"
-              href="https://auth.ansmusiclimited.com/oauth2/authorize?client_id=85a1ac4c-dce9-4f0c-9543-b99d375c707c&response_type=code&redirect_uri=https://backstage.ansmusiclimited.com/sign-in&env=prod&locale=en&from=https://backstage.ansmusiclimited.com"
-              >CLIENT LOGIN</a>
+              <a
+                class="fs-base ANS_btn btn-b-yellow"
+                target="_blank"
+                href="https://auth.ansmusiclimited.com/oauth2/authorize?client_id=85a1ac4c-dce9-4f0c-9543-b99d375c707c&response_type=code&redirect_uri=https://backstage.ansmusiclimited.com/sign-in&env=prod&locale=en&from=https://backstage.ansmusiclimited.com"
+                >CLIENT LOGIN</a
+              >
             </li>
           </ul>
         </nav>
@@ -82,17 +98,17 @@
             <ul class="ANS_menu ANS_flex flex_column">
               <li>
                 <a
-                  class="sidenav-link active fill-fade-in fill-clr-white"
+                  class="sidenav-link fill-fade-in fill-clr-white"
                   data-text="HOME"
-                  href="#"
+                  href="/"
                   >HOME</a
                 >
               </li>
               <li>
                 <a
-                  class="sidenav-link fill-fade-in fill-clr-white"
+                  class="sidenav-link  fill-fade-in fill-clr-white"
                   data-text="SERVICE"
-                  href="#"
+                  href="/services.html"
                   >SERVICE</a
                 >
               </li>
@@ -108,15 +124,15 @@
                 <a
                   class="sidenav-link fill-fade-in fill-clr-white"
                   data-text="DISTRIBUTION SIGNUP"
-                  href="#"
+                  href="https://ansbackstage.com/auth/register"
                   >DISTRIBUTION SIGNUP</a
                 >
               </li>
               <li>
                 <a
-                  class="sidenav-link fill-fade-in fill-clr-white"
+                  class="sidenav-link active fill-fade-in fill-clr-white"
                   data-text="CONTACT"
-                  href="#"
+                  href="/contact-us.html"
                   >CONTACT</a
                 >
               </li>
@@ -124,7 +140,7 @@
                 <a
                   class="sidenav-link fill-fade-in fill-clr-white"
                   data-text="ABOUT"
-                  href="#"
+                  href="/about-us.html"
                   >ABOUT</a
                 >
               </li>
@@ -132,17 +148,17 @@
                 <a
                   class="sidenav-link fill-fade-in fill-clr-white"
                   data-text="CLIENT LOGIN"
-                  href="#"
+                  href="https://auth.ansmusiclimited.com/oauth2/authorize?client_id=85a1ac4c-dce9-4f0c-9543-b99d375c707c&response_type=code&redirect_uri=https://backstage.ansmusiclimited.com/sign-in&env=prod&locale=en&from=https://backstage.ansmusiclimited.com"
                   >CLIENT LOGIN</a
                 >
               </li>
             </ul>
             <!-- <div class="phone-info flex_grow">
-              <div>
-                <img src="assets/img/phone.webp" alt="Phone icon" />
-                <p>(08) 84701714</p>
-              </div>
-            </div> -->
+                <div>
+                  <img src="assets/img/phone.webp" alt="Phone icon" />
+                  <p>(08) 84701714</p>
+                </div>
+              </div> -->
           </div>
 
           <!-- contact column -->
@@ -155,9 +171,7 @@
                   <span class="city-address">
                     30 N Gould St Ste R Sheridan WY 82801 USA
                   </span>
-                  <span>  
-                  +1(307)2042560
-                  </span>
+                  <span> +1(307)2042560 </span>
                 </address>
 
                 <address>
@@ -213,25 +227,37 @@
 
                 <!-- socical links -->
                 <div class="social-links ANS_flex flex_align_center">
-                  <a href="https://www.facebook.com/ansmusicdigital" target="_blank">
+                  <a
+                    href="https://www.facebook.com/ansmusicdigital"
+                    target="_blank"
+                  >
                     <img
                       src="assets/img/facebook-icon.webp"
                       alt="Facebook icon"
                     />
                   </a>
-                  <a href="https://www.youtube.com/@ANSMusicLimited" target="_blank">
+                  <a
+                    href="https://www.youtube.com/@ANSMusicLimited"
+                    target="_blank"
+                  >
                     <img
                       src="assets/icons/youtube-icon.png"
                       alt="Twitter icon"
                     />
                   </a>
-                  <a href="https://www.linkedin.com/company/ansmusic" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/company/ansmusic"
+                    target="_blank"
+                  >
                     <img
                       src="assets/img/linkedin-icon.webp"
                       alt="Linkedin icon"
                     />
                   </a>
-                  <a href="https://www.instagram.com/ansmusic.digital/" target="_blank">
+                  <a
+                    href="https://www.instagram.com/ansmusic.digital/"
+                    target="_blank"
+                  >
                     <img
                       src="assets/img/instragram-icon.webp"
                       alt="Instragram icon"
@@ -245,167 +271,169 @@
             <div
               class="our-partners-wrapper marquee-container ANS_flex flex_column"
             >
-            <div class="ANS_partners-inner ANS_container ANS_marquee-slider-wrapper">
-              <div class="ANS_flex flex_align_center ANS_marquee-slider">
-                <img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/apple.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Spotify.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/amazon.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/tidal-b.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Facebook.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/tiktok.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/vevo.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/napster.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/YouTube01.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/resso.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Deezer_logo.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Pandora.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/instagram.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/apple.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Spotify.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/amazon.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/tidal-b.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Facebook.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/tiktok.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/vevo.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/napster.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/YouTube01.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/resso.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Deezer_logo.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Pandora.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/instagram.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/apple.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Spotify.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/amazon.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/tidal-b.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Facebook.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/tiktok.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/vevo.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/napster.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/YouTube01.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/resso.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Deezer_logo.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Pandora.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                /><img
-                  src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/instagram.webp"
-                  alt="icon"
-                  class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
-                />
+              <div
+                class="ANS_partners-inner ANS_container ANS_marquee-slider-wrapper"
+              >
+                <div class="ANS_flex flex_align_center ANS_marquee-slider">
+                  <img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/apple.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Spotify.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/amazon.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/tidal-b.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Facebook.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/tiktok.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/vevo.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/napster.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/YouTube01.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/resso.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Deezer_logo.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Pandora.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/instagram.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/apple.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Spotify.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/amazon.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/tidal-b.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Facebook.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/tiktok.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/vevo.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/napster.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/YouTube01.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/resso.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Deezer_logo.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Pandora.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/instagram.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/apple.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Spotify.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/amazon.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/tidal-b.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Facebook.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/tiktok.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/vevo.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/napster.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/YouTube01.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/resso.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Deezer_logo.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/Pandora.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  /><img
+                    src="https://gallery.vision/wp-content/themes/Gallery-Vision/assets/images/instagram.webp"
+                    alt="icon"
+                    class="md:!mx-10 mx-5 mt-2 md:!max-h-[38px] max-h-[20px]"
+                  />
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </div>

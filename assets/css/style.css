@@ -618,9 +618,27 @@ width: 30px;
  .ANS_home-banner-bg{
   width: 100%;
   height: 100%;
-  background-attachment:fixed;
-  background-repeat: no-repeat;
-  background-size: cover; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+ }
+
+ .ANS_home-banner-bg .video-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: gray;
+  z-index: 1;
+ }
+
+ .ANS_home-banner-bg video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: -1;
  }
 
  .ANS_home-banner-container{

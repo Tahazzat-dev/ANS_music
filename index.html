@@ -13,7 +13,7 @@
     <!-- TODO: have to remove this befory delivery -->
     <link rel="stylesheet" href="/assets/css/test.css" />
   </head>
-  <body style="background: black">
+  <body>
     <header class="ANS_header">
       <div class="ANS_header-inner ANS_flex flex_align_center justify_between">
         <div class="nav-logo-wrap">
@@ -443,11 +443,15 @@
 
     <main class="ANS_main-wrapper">
       <section class="ANS_home-banner-wrapper">
+ 
+        <div class="ANS_home-banner-bg">
+          <video autoplay muted loop playsinline>
+            <source src="assets/img/home-banner-gif.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
         <!-- banner content -->
-        <div
-          style="background-image: url('assets/img/ANS_home-banner.jpg')"
-          class="ANS_home-banner-bg"
-        >
           <div class="ANS_home-banner-container ANS_flex flex_column">
             <div class="ANS_home-banner-content ANS_container">
               <h4 data-aos="zoom-in-right" class="fs-2xl">
@@ -476,7 +480,6 @@
               </a>
             </div>
           </div>
-        </div>
       </section>
 
       <!-- how it works section -->
