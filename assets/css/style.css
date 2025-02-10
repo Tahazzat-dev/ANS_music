@@ -864,6 +864,169 @@ width: 30px;
   margin: 0 16px;
 }
 
+
+
+
+
+
+
+
+
+/* ============= contact page ======== */
+/* banner style */
+.ANS_contact-banner-wrapper{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  z-index:0;
+  overflow: hidden;
+}
+
+.ANS_contact-banner-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.ANS_contact-banner-bg picture,
+.ANS_contact-banner-bg img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: -1;
+}
+
+
+.ANS_contact-banner-bg .banner-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #000000c3, #0000005f,#000000c3);
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+}
+
+.ANS_office-address{
+  width: 100%;
+  max-width: 300px;
+}
+
+.ANS_office-address .icon-box{
+  padding-left: 25px;
+  position: relative;
+}
+.ANS_office-address .icon-box::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  content: '';
+
+}
+
+.ANS_office-address .icon-box.location-mark::before,
+.ANS_office-address .icon-box.group-arrow::before{
+  background: url(../icons/location-mark.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+}
+
+.ANS_office-address .icon-box.group-arrow{
+  padding-left: 30px;
+}
+.ANS_office-address .icon-box.group-arrow::before{
+  background: url(../icons/group-arrow.svg);
+}
+.ANS_office-address .icon-box.arrow-location::before{
+  background: url(../icons/arrow-location.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.ANS_office-address .icon-box.email::before{
+  background: url(../icons/email.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.ANS_office-address .icon-box.phone::before{
+  background: url(../icons/phone.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.ANS_office-address .icon-box.time-glass::before{
+  background: url(../icons/hour-glass.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ANS_office-address h4{
+  margin-bottom: 12px;
+}
+.ANS_office-address p{
+  margin-top: 5px;
+  /* font-family: var(--ff-futura-std); */
+
+}
+
+
+.ANS_contact-banner-container{
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 0;
+}
+
+.ANS_contact-banner-content{
+  width: 100%;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ANS_contact-banner-content .ANS_office-address{
+  gap: 40px;
+}
+
+.ANS_contact-banner-content .contact-info-card{
+  padding: 20px;
+  background-color: rgba(128, 128, 128, 0.129);
+  border-radius: 15px;
+  border: 1px solid rgba(128, 128, 128, 0.746);
+  backdrop-filter: blur(10px);
+}
+
+.ANS_contact-banner-content .form-container{
+  padding: 40px;
+  background-color: rgba(128, 128, 128, 0.129);
+  border-radius: 15px;
+  border: 1px solid rgba(128, 128, 128, 0.746);
+  width: 100%;
+  backdrop-filter: blur(10px);
+  max-width: 650px;
+}
+.ANS_contact-banner-content .ANS_contact-form{
+  margin-bottom: 20px;
+}
+
+.ANS_contact-banner-content .form-container h2{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.ANS_contact-banner-content .ANS_contact-form input::placeholder,
+.ANS_contact-banner-content .ANS_contact-form textarea::placeholder
+{
+  color: var(--white);
+}
+.ANS_contact-banner-content .form-container{}
+.ANS_contact-banner-content .form-container{}
+.ANS_contact-banner-content .form-container{}
+
+
 /* ================= 
       Device responsiveness
              ================== */
