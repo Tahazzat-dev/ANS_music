@@ -1409,10 +1409,6 @@ object-fit: cover;
   margin-bottom: 10px;
 }
 
-.ANS_global-plartforms .card-box{}
-.ANS_global-plartforms .card-box{}
-.ANS_global-plartforms .card-box{}
-.ANS_global-plartforms .card-box{}
 
 .ANS_global-plartforms .divider{
   width: 1px;
@@ -1429,7 +1425,7 @@ object-fit: cover;
 
 .ANS_service-container{
   gap: 50px;
-  max-width: 1300px;
+  max-width: 1200px;
 }
 
 .ANS_service-container .section-thum{
@@ -1494,6 +1490,67 @@ object-fit: cover;
 .ANS_different-stores-inner .top-text h3{
   margin-bottom: 10px;
 }
+
+
+/* ========== blog page ========= */
+.ANS_blog-section-wrap{
+  width: 100%;
+  padding-top: 120px;
+}
+
+.ANS_blog-section-inner .top-text{
+  margin-bottom: 40px;
+  gap: 25px;
+}
+
+.ANS_blog-section-inner .top-text .ANS_btn{
+  white-space: nowrap;
+}
+
+.ANS_blogs{
+  display: grid;
+grid-template-columns: repeat(auto-fill,minmax(350px, 1fr));
+gap: 35px;
+}
+
+.ANS_blogs .blog{
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.129);
+  border-radius: 15px;
+  border: 1px solid rgba(128, 128, 128, 0.746);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.ANS_blogs .blog .blog-thum{
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+.ANS_blogs .blog .blog-thum img{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  transition: var(--transition-normal);
+}
+
+.ANS_blogs .blog:hover .blog-thum img{
+  scale: 1.1;
+}
+
+.ANS_blogs .blog .content{
+  padding: 20px;
+}
+
+.ANS_blogs .blog .content h4{
+  margin-bottom: 10px;
+}
+.ANS_blogs .blog .ANS_btn{
+  margin-top: 20px;
+}
+
+
 
 
 /* ================= 
@@ -1816,6 +1873,11 @@ object-fit: cover;
   padding: 100px 0;
 }
 
+/* ========== Blog page ========= */
+.ANS_blog-section-wrap {
+  width: 100%;
+  padding-top: 100px;
+}
 
 
 }
@@ -1998,6 +2060,10 @@ object-fit: cover;
   padding: 90px 0;
 }
 
+/* ========== Blog page ========= */
+.ANS_blog-section-wrap {
+  padding-top: 90px;
+}
 
 
 }
@@ -2119,6 +2185,10 @@ object-fit: cover;
   padding: 80px 0;
 }
 
+/* ========== Blog page ========= */
+.ANS_blog-section-wrap {
+  padding-top: 80px;
+}
 
 
 }
@@ -2403,9 +2473,13 @@ padding: 0;
   padding: 70px 0;
 }
 
-
+/* ========== Blog page ========= */
+.ANS_blog-section-wrap {
+  padding-top: 70px;
+}
 
 /* end */
+
 
 
 
@@ -2535,5 +2609,18 @@ padding: 0;
 }
 
 
+.ANS_blog-section-inner .top-text{
+  margin-bottom: 40px;
+  flex-direction: column;
+  align-items: start;
+}
+
+.ANS_blogs{
+grid-template-columns: repeat(auto-fill,minmax(250px, 1fr))
+}
+
+.ANS_blogs .blog .blog-thum {
+  height: 220px;
+}
 
 }
