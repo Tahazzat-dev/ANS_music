@@ -92,8 +92,6 @@
 
         const navmenu = new Navmenu();
 
-
-
     });
 })(jQuery)
 
