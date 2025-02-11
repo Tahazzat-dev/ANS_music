@@ -82,11 +82,12 @@ body {
 
 .ANS_sidebar-logo-wrap.small {
   width: 100%;
-  min-height: 40px;
+  min-height: 25px;
   margin-top: 40px;
-  padding: 0 6px;
+  padding: 0 5px;
   transition: var(--transition-normal);
   opacity: 1;
+  max-width: 65px;
 }
 
 .ANS_sidebar-logo-wrap.small.hide{
